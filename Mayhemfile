@@ -1,0 +1,13 @@
+project: build
+target: build
+image: ghcr.io/rnshah9/playground:build
+duration: 120
+testsuite:
+  - file://example/hello/jamroot.jam
+
+cmds:
+  - cmd: /repo/b2
+    filepath: /repo/example/hello/jamroot.jam
+    env:
+      DISABLE_SMOKETEST: '1'
+
