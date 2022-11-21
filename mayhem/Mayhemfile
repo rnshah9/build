@@ -1,6 +1,5 @@
 project: build
 target: build
-duration: 120
 testsuite:
   - file://example/hello/jamroot.jam
 
@@ -10,3 +9,4 @@ cmds:
     env:
       DISABLE_SMOKETEST: '1'
 
+image: ghcr.io/rnshah9/playground:build
